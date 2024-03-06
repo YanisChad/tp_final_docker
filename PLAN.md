@@ -8,6 +8,10 @@ Début de l'installation de Jenkins
 Fin de l'installation de Jenkins et début de le configuration
 Installation de GitLab
 Test des différentes fonctionnalités sur Jenkins et GitLab
+Rendu sur les différents fichiers .md
+
+## Séance 3 : 
+Finalisation + oral
 
 ## Répartition des taches :
 
