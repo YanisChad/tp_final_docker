@@ -25,7 +25,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir('TP_DOCKER_2/src') {
-                    sh 'npm run build'
+                    sh 'npm test'
                 }
             }
         }
