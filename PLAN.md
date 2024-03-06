@@ -1,7 +1,7 @@
 # Plan
 
 ## Séance 1 :
-Début des recherches théoriques sur les différents avantages/inconvenant des outils
+Début des recherches théoriques sur les différents avantages/inconvenant des outils  
 Début de l'installation de Jenkins
 
 ## Séance 2 :
