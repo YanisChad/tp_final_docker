@@ -30,11 +30,14 @@ apt-get install -y nodejs
 apt-get install -y npm
 ```
 
-On crée un fichier Jenkinsfile qui contiendra toutes les actions à effectuer pour lancer les test.
+On crée un fichier Jenkinsfile qui contiendra toutes les actions à effectuer pour lancer les test. (voir Jenkinsfile)
 On peut soit définire un moment ou les test seront lancés ou soit cliquer sur "Lancer un build"
 
 
 ## GitHub
 
-Se rendre sur l'onglet action de GitHub, le test s'effectue
-On peut consulter le fichier .yml dans .github\workflows
+Créer un dossier workflows dans un fichier .github
+Dans ce dossier créer un fichier .yml
+Dans ce fichier .yml, renseigner toutes les actions que notre Action Github devra effectuer (voir .github\workflows\test.yml)
+(Ici), lors d'un push ou d'une pull request sur main, les actions seront effectuées
+On peut retrouver les résultats sur l'onglet Actions du repo
