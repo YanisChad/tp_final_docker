@@ -1,12 +1,12 @@
 # TP Final DevOps B3 Cyber
 
-## Jenkins
+## Jenkins 
 Commencer par récupérer la dernière image de jenkins via la commande  
 ```docker
 docker pull jenkins/jenkins:lts
 ```
 
-Puis lancer le conteneur  
+Puis lancer le conteneur à l'aide de cette commande : 
 ```docker
 docker run -d -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home --name jenkins jenkins/jenkins:lts
 ```
