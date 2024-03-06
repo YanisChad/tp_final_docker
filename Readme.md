@@ -34,7 +34,7 @@ On crée un fichier Jenkinsfile qui contiendra toutes les actions à effectuer p
 On peut soit définire un moment ou les test seront lancés ou soit cliquer sur "Lancer un build"
 
 
-## GitHub
+## GitHub Actions
 
 Créer un dossier workflows dans un fichier .github
 Dans ce dossier créer un fichier .yml
