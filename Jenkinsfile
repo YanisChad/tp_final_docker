@@ -1,12 +1,13 @@
 pipeline {
     agent any
 
-    stage('Build started') {
+
+    stages {
+        stage('Build started') {
             steps {
                 echo 'Build started'
             }
-    }
-    stages {
+        }
         stage('Checkout') {
             steps {
                 git 'https://github.com/YanisChad/tp_final_docker.git'
@@ -24,7 +25,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir('TP_DOCKER_2/src') {
-                    sh 'npm run build'
+                    sh 'npm test'
                 }
             }
         }
