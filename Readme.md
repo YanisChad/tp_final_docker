@@ -41,3 +41,33 @@ Dans ce dossier créer un fichier .yml
 Dans ce fichier .yml, renseigner toutes les actions que notre Action Github devra effectuer (voir .github\workflows\test.yml)  
 (Ici), lors d'un push ou d'une pull request sur main, les actions seront effectuées  
 On peut retrouver les résultats sur l'onglet Actions du repo  
+
+
+## GitLab
+Commencer par récupérer la dernière image de GitLab Ce via la commande  
+```docker
+docker pull gitlab/gitlab-ce:lts
+```
+Puis lancer un conteneur avec la commande 
+```
+docker run --detach ^
+  --hostname localhost ^
+  --publish 443:443 --publish 80:80 --publish 22:22 ^
+  --name gitlab ^
+  --restart always ^
+  --volume C:\srv\gitlab\config:/etc/gitlab ^
+  --volume C:\srv\gitlab\logs:/var/log/gitlab ^
+  --volume C:\srv\gitlab\data:/var/opt/gitlab ^
+  gitlab/gitlab-ce:latest
+```
+Acceder a localhost:80  
+Une fois sur la page de connexion entrer la commande suivante dans le terminal pour récupérer le mot de passe root
+```
+Créer un nouveau projet  
+Ajouter un fichier .gitlab-ci.yml et ajouter la configuration de la pipeline  
+Se rendre dans Parametre > CI/CD / Runnner et créer un runner
+Renseingner les options pouis utiliser la commande
+```
+.\gitlab-runner.exe run
+```
+La pipeline devrai s'executer correctement
