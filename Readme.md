@@ -61,8 +61,10 @@ docker run --detach ^
   gitlab/gitlab-ce:latest
 ```
 Acceder a localhost:80  
-Une fois sur la page de connexion entrer la commande suivante dans le terminal pour récupérer le mot de passe root
+Une fois sur la page de connexion entrer la commande suivante dans le terminal pour récupérer le mot de passe root a l'aide de la commande
 ```
+docker exec gitlab-ce sh -c "cat /etc/gitlab/initial_root_password | grep 'Password:'"
+````
 Créer un nouveau projet  
 Ajouter un fichier .gitlab-ci.yml et ajouter la configuration de la pipeline  
 Se rendre dans Parametre > CI/CD / Runnner et créer un runner
